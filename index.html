@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyiv streets</title>
+
+    <link rel="stylesheet" href="libs/image-compare-viewer.min.css" type="text/css">
+</head>
+<body>
+    
+<style>
+    .slider {
+        margin: 20px auto 50px;
+        max-width: 1000px;   /* you may remove this row to enable 100% width view  */
+        width: 100%;
+        background-color: black;
+    }
+</style>
+
+<div id="slider" class='slider'>
+    <img src="map2_en.png" alt="BEFORE" />
+    <img src="map1_en.png" alt="AFTER" />
+</div>
+
+
+<script src="libs/image-compare-viewer.min.js"></script>
+
+<script>
+    const element = document.getElementById("slider");
+    const myViewer = new ImageCompare(element).mount();
+</script>
+</body>
+</html>
